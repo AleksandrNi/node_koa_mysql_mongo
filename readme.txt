@@ -1,8 +1,6 @@
 =========== NODE_KOA_MySQL_MONGO ==============
 
-How to:
-
-connect db => config/default.js
+https://github.com/AleksandrNi/node_koa_mysql_mongo
 
 routes
 1. '/createjson'
@@ -11,7 +9,7 @@ routes
 
 2.'/uploaddb' 
 //create postgresql table and upload data there from json files (/public/filtered)
-information about created file saved into MongoDB for a while it'll upload in MySQL, then information about the file will be deleted.
+information about created file [ name, mime type, size] saved into MongoDB for a while file content [json] will be uploaded in MySQL, then information about the file will be deleted form mongo.
 
 3. '/'
 client interface 
