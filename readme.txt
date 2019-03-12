@@ -8,7 +8,7 @@ routes
 //create valid json files from not valid json, result in.public/filtered
 
 2.'/uploaddb' 
-//create postgresql table and upload data there from json files (/public/filtered)
+//create mysql table and upload data there from json files (/public/filtered)
 information about created file [ name, mime type, size] saved into MongoDB for a while file content [json] will be uploaded in MySQL, then information about the file will be deleted form mongo.
 
 3. '/'
