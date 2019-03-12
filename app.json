@@ -1,0 +1,12 @@
+{
+  "name": "node-koa2-mysql-mongo",
+  "description": "desc:node-koa2-mysql-mongo",
+  "repository": "https://github.com/AleksandrNi/node_koa_mysql_mongo",
+  "logo": "https://cdn.rawgit.com/heroku/node-js-getting-started/master/public/node.svg",
+  "keywords": [
+    "node",
+    "koa",
+    "mysql"
+  ],
+  "image": "heroku/nodejs"
+}

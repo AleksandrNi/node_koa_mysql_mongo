@@ -1,0 +1,47 @@
+{
+  "name": "node-koa2-mysql-mongo-uploader",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "10.x"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AleksandrNi/node_koa_mysql_mongo.git"
+  },
+  "keywords": [
+    "node",
+    "koa",
+    "mysql"
+  ],
+  "author": "AleksandrNi",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-favicon": "^2.0.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "mime-type": "^3.0.7",
+    "mongoose": "^5.4.19",
+    "mongoose-beautiful-unique-validation": "^7.1.1",
+    "mysql": "^2.16.0",
+    "node-fetch": "^2.3.0",
+    "pug": "^2.0.3",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "util": "^0.11.1"
+  }
+}

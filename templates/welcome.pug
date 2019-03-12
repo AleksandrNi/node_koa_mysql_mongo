@@ -1,0 +1,82 @@
+extends layout
+
+block append assets
+  script(src="/script.js")
+
+block content
+  button.getter.half( value="get") Let's get something
+  button.setter.half( value="update") Let's update something
+  div.wrapper_get.hidden
+    form#queryForm(action="/query" method="post")
+      div.first
+        span  1 || 
+        span SELECT 
+        select(id="select1") 
+          each item in queryParams
+            option(value=item id="select1") #{item}
+
+        span , 
+        select(id="select2")
+          each item in queryParams
+            option(value=item id="select2") #{item}
+        span  FROM table 
+      div.second
+            span  2 ||  Type of || varchar: title, date, author, description, image || bigint: isbn 
+      div.third
+        span  3 || 
+        span WHERE 
+        select(id="select3")
+          each item in orderByParams
+            option(value=item) #{item} 
+        span 
+        select( id="select4")
+          each operator in queryOperators
+            option(value=operator ) #{operator}
+        span  QueryString  
+          input(placeholder="Green" id="inputValue")
+
+      div.forth
+        span  4 || 
+        span ORDER by 
+        select(id="orderBy")
+          each item in orderByParams
+            option(value=item id="select2") #{item}
+        span  Limit 
+        select(id="queryLimit")
+          each number in queryLimit
+            option(value=number) #{number}
+        span  Sorting 
+          select(id="sortingID")
+            each type in sorting
+              option(value=type) #{type}
+
+      button.finder(type="submit" value="") Make query
+        
+      button.half.half_left.hidden(id="prev" type="submit" value="prev") Previous page
+      button.half.half_right.hidden(id="next" type="submit" value="next") Next page
+
+  div.wrapper_update.updater_entry.hidden
+    form#updForm(action="/update" method="post")
+      div.first
+        span  1 ||  Type of || varchar: title, date, author, description, image || bigint: isbn
+      div.second
+        span  2 ||  Paste row id you wanna update 
+          input(placeholder="123456" id="updateId" required)      
+      div.third
+        span  3 ||  Title 
+          input(placeholder="New title" id="updateTitle")
+        span  4 ||  Date 
+          input(placeholder="yyyy-mm-dd" id="updateDate")
+      div.forth
+        span  5 ||  Author 
+          input(placeholder="Green, Adams" id="updateAuthor")      
+        span  6 ||  Decription 
+          input(placeholder="greenadams" id="updateDesc") 
+      div.fifth
+        span  7 ||  Image link 
+          input(placeholder="http://pics.com/funnykitty.jpg" id="updatePic")      
+        span  8 ||  isbn 
+          input(placeholder="1234566554321" id="updateIsbn" required)  
+      button.updater(type="submit" value="") Make update     
+  ul.message
+  div.table-result

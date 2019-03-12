@@ -1,0 +1,120 @@
+body {
+    background-color: #EEEEFF;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+  margin: auto;
+  width: 600px;
+  padding: 8px;
+}
+
+
+.first, .second, .third, .forth, .fifth, button {
+  border: 1px solid #ccc;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.first, .second, .third, .forth, .fifth {
+  background-color: #CCCCFF;
+}
+
+button {
+  background-color:#B9B9FF;
+}
+
+.first, .second, .third, button, ul.message li {
+	font-family: 'Ek Mukta';
+  letter-spacing: 1px;
+  font-size: 1rem;
+}
+
+.first {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+input, select {
+    -moz-border-radius: 4px;
+    -moz-box-shadow: 1px 1px 5px #DEDEFF;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+option {
+    background-color: #DEDEFF;
+}
+option:hover {
+    cursor: pointer;
+}
+
+button {
+	width: 100%;
+	height: 30px;
+	font-size: 1rem;
+	text-transform: uppercase;
+
+}
+
+button:hover {
+  transition-duration: 0.05s;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.24)
+}
+
+select, input, button:focus {
+	outline:0;
+}
+
+button.half {
+  border-radius: 0;
+  width: 300px;
+}
+
+button.half:nth-child(even) {
+  border-bottom-left-radius: 5px;
+}
+
+button.half:nth-child(odd) {
+  border-bottom-right-radius: 5px;
+} 
+
+ul.message li {
+  background-color: #CCCCFF;
+  padding: 5px;
+  margin-bottom: 5px;
+
+}
+ul.message {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+  background-color: #CCCCFF;
+  color: white;
+}
+
+th:nth-child(odd) {
+  border-bottom-left-radius: 5px;
+}
+
+th:nth-child(even) {
+  border-bottom-right-radius: 5px;
+}
