@@ -1,4 +1,4 @@
-=========== NODE_KOA_POSTGRESQL ==============
+=========== NODE_KOA_MySQL_MONGO ==============
 
 How to:
 
@@ -11,8 +11,7 @@ routes
 
 2.'/uploaddb' 
 //create postgresql table and upload data there from json files (/public/filtered)
-// be careful. it upload more than 100 000 rows.
-//if you wanna to change it => createJSON.js // create 300 files with 400 objects each.
+information about created file saved into MongoDB for a while it'll upload in MySQL, then information about the file will be deleted.
 
 3. '/'
 client interface 
